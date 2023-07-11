@@ -1,0 +1,134 @@
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.container
+{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(background.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width:100%;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.navbar
+{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.logo
+{
+
+padding-top: 40px;
+    cursor: pointer;
+}
+.menuicon
+{
+    width:30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+nav{
+   flex:1;
+    text-align: right;
+}
+nav ul li {
+list-style: none;
+display: inline-block;
+margin-left: 60px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.row 
+{
+   height: 88%;
+   display: flex;
+   align-items: center;
+ 
+}
+h1{
+    color:white;
+}
+.col
+{
+    flex-basis: 50%;
+    line-height: 1.4;
+}
+.col p{
+    color: white;
+    font-size: 15px;
+}
+.explore
+{
+    border:0;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    width: 180px;
+    padding: 12px 0px;
+    outline: none;
+    font-size: 12px;
+ 
+}
+.card
+{
+    height: 250px;
+    width: 230px;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    padding-left: 30px;
+    margin-top: 40px;
+    margin-left: 30px;
+    border-radius: 20px;
+    padding-top: 10px;
+    transition: transform 0.5s;
+}
+.card1
+{
+    background-image: url(pic-1.png);
+
+}
+.card2
+{
+    background-image: url(pic-2.png);
+}
+.card3
+{
+    background-image: url(pic-3.png);
+}
+.card4
+{
+    background-image: url(pic-4.png);
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+.explore:hover{
+    color: blue;
+}
+h5{
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+    font-size: medium;
+}
+.card p{
+    font-size: 8px;
+    text-shadow: 0 0 15px #000;
+}
+
+nav ul li a:hover
+{
+color: blueviolet;
+text-decoration: underline;
+}
