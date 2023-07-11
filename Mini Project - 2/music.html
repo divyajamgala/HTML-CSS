@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My music
+        </title>
+        <link rel="stylesheet" href="stylee.css" type="text/css">
+        <link rel="icon" href="music.jpg" type="images/jpg">
+    </head>
+    <body>
+        <div class="container">
+       
+            <div class="navi">
+            <img src="logo.png"alt="logo" title="logo image" class="logo">
+       
+         
+        <ul>
+            <li><a href="#">MAIN</a></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PLAY LIST</a></li>
+           <li><a href="#">ALBUMS</a></li> 
+           <li><a href="#">ARTISTS</a></li> 
+        </ul>
+    </div>
+    </div>
+    <div class="content">
+        <div class="colleft">
+            <h1>THE<br> REAL <br>SOUND</h1>
+        </div>
+        <div class="rightcol">
+            <p>click here to listen</p>
+            <img src="play.png" alt="play" title="play music" id="icon">
+        </div>
+    </div>
+       <audio id="mysong">
+        <source src="WhatsApp Audio 2023-07-05 at 10.58.51 PM.mpeg" alt="music" title="song">
+        </audio>
+        <script>
+            var mysong=document.getElementById("mysong")
+            var icon=document.getElementById("icon")
+            icon.onclick=function()
+            {
+                if(mysong.paused)
+                {
+                mysong.play();
+                icon.src="pause.png";
+            }
+                else
+                {
+                    mysong.pause();
+                    icon.src="play.png";
+                 }
+                }
+        </script>
+     
+   
+    </body>
+</html>
